@@ -99,4 +99,4 @@ Si deseas mejorar o contribuir al proyecto, sientete libre de crear un pull requ
 
 ## Autor
 
-Este proyecto fue desarrollado por [Tu nombre].
+Este proyecto fue desarrollado por Christian Darien Montes de Oca Perez.

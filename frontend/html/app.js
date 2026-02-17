@@ -87,11 +87,7 @@ function createOperatorElement(op, tier) {
   img.src = `images/${op.toLowerCase()}.png`;
   img.alt = op;
 
-  const span = document.createElement("span");
-  span.textContent = op;
-
   div.appendChild(img);
-  div.appendChild(span);
 
   div.ondragstart = e => {
     draggedOperator = op;

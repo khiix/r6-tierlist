@@ -145,9 +145,12 @@ h2 {
   text-align: center;
   border: 1px solid transparent;
   border-radius: 10px;
-  padding: 5px 4px 6px;
+  padding: 6px;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
   animation: rise-in 350ms ease both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .operator img {
@@ -155,15 +158,6 @@ h2 {
   height: 48px;
   object-fit: contain;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
-}
-
-.operator span {
-  display: block;
-  margin-top: 4px;
-  font-size: 11px;
-  font-weight: 700;
-  line-height: 1.1;
-  text-wrap: balance;
 }
 
 .operator:hover {
@@ -254,7 +248,7 @@ button:active {
 
   .operator {
     width: 58px;
-    padding: 4px 3px 5px;
+    padding: 5px;
   }
 
   .operator img {

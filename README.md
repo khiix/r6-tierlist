@@ -38,3 +38,65 @@ Este proyecto es una **aplicación web interactiva** que permite gestionar una *
    ```bash
    git clone https://github.com/khiix/r6-tierlist.git
    cd r6-tierlist
+   ```
+
+2. **Construir y levantar los contenedores**:
+
+   Asegurate de tener Docker instalado. Luego, desde la carpeta raiz del proyecto, ejecuta:
+
+   ```bash
+   docker compose up --build
+   ```
+
+   Esto construira las imagenes de Docker para el frontend y el backend, y levantara los contenedores.
+
+3. **Acceder a la aplicacion**:
+
+   Una vez que Docker haya terminado de construir y levantar los contenedores, abre tu navegador y accede a las siguientes direcciones:
+
+   - Frontend (la aplicacion con la tier list interactiva): `http://localhost:8080`
+   - Backend (API que devuelve el archivo `tiers.json`): `http://localhost:3000/tiers`
+
+4. **Detener los contenedores**:
+
+   Cuando termines de usar la aplicacion, puedes detener los contenedores con el siguiente comando:
+
+   ```bash
+   docker compose down
+   ```
+
+---
+
+## Estructura del proyecto
+
+```text
+r6-tierlist/
+├── backend/
+│   ├── data/
+│   │   └── tiers.json
+│   ├── Dockerfile
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   └── html/
+│       ├── index.html
+│       ├── style.css
+│       ├── app.js
+│       └── images/
+│           ├── ash.png
+│           ├── jager.png
+│           └── ...
+├── docker-compose.yml
+```
+
+---
+
+## Contribuir
+
+Si deseas mejorar o contribuir al proyecto, sientete libre de crear un pull request con tus cambios.
+
+---
+
+## Autor
+
+Este proyecto fue desarrollado por [Tu nombre].

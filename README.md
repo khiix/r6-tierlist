@@ -36,5 +36,5 @@ Este proyecto es una **aplicación web interactiva** que permite gestionar una *
    Si aún no has clonado el proyecto, clónalo usando el siguiente comando:
 
    ```bash
-   git clone <url-del-repositorio>
+   git clone https://github.com/khiix/r6-tierlist.git
    cd r6-tierlist

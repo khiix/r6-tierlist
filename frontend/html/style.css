@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 12px;
+  min-height: 0;
+}
+
+#tiers {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tier {
+  border: 2px solid #ccc;
+  padding: 8px;
+  min-height: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tier h2 {
+  font-size: 16px;
+}
+
+.operators {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
+}
+
+.pool {
+  background: #111;
+  padding: 8px;
+  border: 2px solid #444;
+  overflow-y: auto;
+  align-content: flex-start;
+}
+
+.operator {
+  text-align: center;
+  width: 58px;
+  cursor: grab;
+}
+
+.operator img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.operator span {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+.operator:active {
+  cursor: grabbing;
+}
+
+.operator.dragging {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+
+.tier-hover {
+  border: 2px dashed #aaa;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr minmax(220px, 40vh);
+  }
+}

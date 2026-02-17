@@ -2,20 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>R6 Operator Tierlist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app">
-    <h1>R6 Operator Tierlist</h1>
+    <header class="app-header">
+      <p class="kicker">Rainbow Six Siege</p>
+      <h1>Operator Tier List</h1>
+    </header>
 
     <div class="layout">
       <div id="tiers"></div>
 
       <aside class="sidebar">
-        <h2>Operadores</h2>
+        <h2>Operadores disponibles</h2>
         <div id="pool" class="operators pool"></div>
-        <button onclick="save()">Guardar cambios</button>
+        <button class="save-btn" onclick="save()">Guardar cambios</button>
       </aside>
     </div>
   </div>
